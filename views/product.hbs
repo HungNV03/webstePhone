@@ -1,0 +1,40 @@
+<div class="row">
+  <article class="col-sm-9">
+    <div class="row">
+      {{#each products}}
+        <div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              {{this.name}}
+            </div>
+            <div class="panel-body">
+              <img src="{{this.image}}" alt="" width="220" height="200" />
+            </div>
+            <div class="panel-footer">$ {{this.price}}</div>
+            <div class="thumb-wrapper">
+              <div
+                class="thumb-content"
+                style="margin-left: 45px; margin-bottom: 10px;"
+              >
+                <a href="/product/" class="btn btn-success">Add</a>
+                <td class="mt">
+                  <a
+                    href="/product/edit/{{this._id}}"
+                    class="btn btn-primary"
+                  >Edit</a>
+                </td>
+                <td class="mt">
+                  <a
+                    href="/product/delete/{{this._id}}"
+                    class="btn btn-danger"
+                  >Delete</a>
+                </td>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </article>
+</div>

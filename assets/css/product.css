@@ -1,0 +1,44 @@
+header{
+    position: relative;
+}
+.shopping-mall{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    font-variant: small-caps;
+}
+.shopping-mall h1{
+    font-family: Impact;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 0.3px;
+    text-shadow: 0 0 3px rgba(1, 16, 18, 0.805);
+    padding-bottom: 0px;
+    border-bottom: 1px dotted gray;
+    margin: 0;
+}
+.shopping-mall h5{
+    margin-top: 60px;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+
+.poly-cart{
+
+}
+.poly-cart ul{
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: 0px;
+    padding: 0;
+}
+.poly-cart img{
+    margin-left: 15px;
+}
+.poly-cart input{
+    margin-left: 15px;
+    width: 215px;
+}
+.form-control{
+    font-size: 15px;
+}

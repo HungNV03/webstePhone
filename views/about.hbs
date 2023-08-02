@@ -1,0 +1,28 @@
+<h3 ><a href="/user/" class="btn btn-primary">ADD USER</a>VIEW LIST INFOR USER</h3>
+
+<table class="table table-bordered">
+  <tr>
+    <th>fullname</th>
+    <th>email</th>
+    <th>passwrod</th>
+    <th>phone</th>
+    <th>address</th>
+    <th>image</th>
+    <th>action</th>
+  </tr>
+
+  {{#each users}}
+  <tr>
+    <td>{{this.fullname}}</td>
+    <td>{{this.email}}</td>
+    <td>{{this.password}}</td>
+    <td>{{this.phone}}</td>
+    <td>{{this.address}}</td>
+    <td><img src="/{{this.imageURL}}" style="width: 120px !important;" alt=""></td>
+     <td>
+      <a href="/user/edit/{{this._id}}" class="btn btn-primary btn-sm">edit</a>
+      <a href="/user/delete/{{this._id}}" onclick="return confirm('Are you suer ?')" class="btn btn-danger btn-sm">delete</a>
+    </td>
+  </tr>
+  {{/each}}
+</table>

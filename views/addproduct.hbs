@@ -1,0 +1,24 @@
+<div class="card" >
+  <div class="card-header" style=" margin-left: 440px; margin-right: 200px; margin-top: 100px;">
+    <h3 style=" font-size: 35px;">{{viewtitle}}</h3>
+    
+  </div>
+  <div class="card-body" style="max-width: 580px; margin-left: 300px; margin-right: 300px; margin-top: 40px;  padding:0 25px; border-radius: 30px;">
+    <form action="/product/add" method="POST" autocomplete="off" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="{{product._id}}">
+      <div class="input-group" style="margin-bottom: 10px;">
+        <span class="input-group-addon"><i class="	glyphicon glyphicon-pencil"></i></span>
+        <input id="name" type="text" value="{{product.name}}" class="form-control"  name="name" placeholder="tên sản phẩm"> 
+      </div>
+      <div class="input-group" style="margin-bottom: 10px;">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-bitcoin"></i></span>
+        <input id="price" type="text" value="{{product.price}}" class="form-control" name="price" placeholder="giá tiền">
+      </div>
+        <div class="input-group" style="margin-bottom: 10px;">
+        <span class="input-group-addon"><i class="	glyphicon glyphicon-folder-open"></i></span>
+        <input id="image" type="Text"  class="form-control" name="image" placeholder="thêm ảnh">
+      </div>
+      <input type="submit" value="post" class="btn btn-success btn-block">
+    </form>
+  </div>
+</div>

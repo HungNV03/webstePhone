@@ -1,0 +1,38 @@
+<div class="card" >
+  <div class="card-header" style=" margin-left: 440px; margin-right: 200px; margin-top: 100px;">
+    <h3 style=" font-size: 35px;">{{viewtitle}}</h3>
+    
+  </div>
+  <div class="card-body" style="max-width: 580px; margin-left: 300px; margin-right: 300px; margin-top: 40px;  padding:0 25px; border-radius: 30px;">
+    <form action="/user/add" method="POST" autocomplete="off" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="{{user._id}}">
+      <div class="input-group" style="margin-bottom: 10px;">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input id="fullname" type="text" value="{{user.fullname}}" class="form-control"  name="fullname" placeholder="Tên đăng nhập"> 
+      </div>
+      <div class="input-group" style="margin-bottom: 10px;">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-paperclip"></i></span>
+        <input id="email" type="text" value="{{user.email}}" class="form-control" name="email" placeholder="Địa chỉ Email">
+      </div>
+      <div class="input-group" style="margin-bottom: 10px;">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input id="password" type="password" value="{{user.password}}" class="form-control" name="password" placeholder="Mật khẩu">
+      </div>
+      <div class="input-group" style="margin-bottom: 10px;">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+        <input id="phone" type="text" value="{{user.phone}}" class="form-control" name="phone" placeholder="Số điện thoại">
+      </div>
+      
+      <div class="input-group" style="margin-bottom: 10px;">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-flag"></i></span>
+        <input id="address" type="address" value="{{user.address}}" class="form-control" name="address" placeholder="địa chỉ">
+      </div>
+        <div class="input-group" style="margin-bottom: 10px;">
+        <span class="input-group-addon"><i class="	glyphicon glyphicon-folder-open"></i></span>
+        <input id="imageURL" type="file"  class="form-control" name="imageURL" placeholder="thêm ảnh">
+      </div>
+      <input type="submit" value="submit" class="btn btn-success btn-block">
+       <a href="/user/list" class="btn btn-primary" style="margin-top: 20px; margin-left: 199px;">view users</a>
+    </form>
+  </div>
+</div>

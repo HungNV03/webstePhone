@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="card-header">
+    <h3>Sign Up</h3>
+    <div class="social_icon">
+      <span><i class="fab fa-facebook-square"></i></span>
+      <span><i class="fab fa-google-plus-square"></i></span>
+      <span><i class="fab fa-twitter-square"></i></span>
+    </div>
+  </div>
+  <div class="card-body">
+    <form action="/user/signup" method="POST">
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input id="username" type="text" class="form-control" name="username" placeholder="Tên đăng nhập" autocomplete="off">
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-paperclip"></i></span>
+        <input id="email" type="text" class="form-control" name="email" placeholder="Địa chỉ Email">
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+        <input id="phone" type="text" class="form-control" name="phone" placeholder="Số điện thoại">
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input id="password" type="password" class="form-control" name="password" placeholder="Mật khẩu">
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input id="password" type="password" class="form-control" name="cpassword" placeholder="Xác nhận mật khẩu">
+      </div>
+      <input type="submit" value="Đăng ký tài khoản" class="btn btn-success btn-block">
+    </form>
+  </div>
+  <div class="card-footer">
+    <div class="">
+      Bạn dã có tài khoản? <a href="/signin">Đăng nhập ngay</a>
+    </div>
+  </div>
+</div>

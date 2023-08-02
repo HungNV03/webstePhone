@@ -1,0 +1,27 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="home">FPT Polytechnic</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="{{isActive 'Trang chủ' pageTitle}}"><a href="/home">Home</a></li>
+				<li class="{{isActive 'Sản phẩm' pageTitle}}"><a href="/product/list">Product</a></li>
+				<li class="{{isActive 'Sản phẩm' pageTitle}}"><a href="/product">AddProduct</a></li>
+				<li class="{{isActive 'Liên hệ' pageTitle}}"><a href="/user">addUser</a></li>
+				<li class="{{isActive 'Giới thiệu' pageTitle}}"><a href="/user/list">ViewUser</a></li>
+				
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="{{isActive 'Đăng nhập' pageTitle}}"><a href="signin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				<li class="{{isActive 'Đăng ký' pageTitle}}"><a href="signup"><span class="glyphicon glyphicon-plus-sign"></span> Sign Up</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+</nav>

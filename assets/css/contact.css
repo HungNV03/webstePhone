@@ -1,0 +1,46 @@
+html,
+.container {
+    height: 100%;
+    align-content: center;
+}
+
+.card {
+    margin: 48px auto;
+    width: 100%;
+    max-width: 480px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    position: relative;
+    border-radius: 12px;
+}
+
+.card-header {
+    width: 100%;
+    text-align: center;
+    color: white !important;
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+.social_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(30px, -30px);
+}
+.social_icon span {
+    font-size: 60px;
+    color: #FFC312;
+}
+
+.card-body {
+    padding: 0 24px;
+}
+.input-group {
+    margin-bottom: 12px;
+}
+.card-footer {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 8px 0;
+}
